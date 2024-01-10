@@ -69,7 +69,7 @@ function CampaignsView({ ttclid, gclid, kwaiid }: Props) {
           alt="Top Banner"
           borderRadius={10}
         />
-        <PhoneOtpScreen handleSuccess={handleSuccess} />
+        {/* <PhoneOtpScreen handleSuccess={handleSuccess} /> */}
       </Flex>
       <Box
         as={Image}

@@ -64,7 +64,7 @@ function CampaignsView({ ttclid, gclid, kwaiid }: Props) {
       >
         <Box
           as={Image}
-          loading="lazy"
+          loading="eager"
           h={"60px"}
           w={"370px"}
           src={CampaginBanner2}

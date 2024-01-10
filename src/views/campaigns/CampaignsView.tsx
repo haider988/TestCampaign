@@ -1,6 +1,6 @@
 import { memo, useCallback } from "react";
 // import SuccessScreen from "../SuccessScreen";
-// import WWBanner from "../../assets/wwBanner.jpg";
+import WWBanner from "../../assets/wwBanner.jpg";
 import { Box, Flex, HStack } from "@chakra-ui/layout";
 import PhoneOtpScreen from "./PhoneOtpScreen";
 import CampaginBanner2 from "../../assets/campaignBanner2.jpg";
@@ -64,7 +64,7 @@ function CampaignsView({ ttclid, gclid, kwaiid }: Props) {
       >
         <Box
           as={Image}
-          loading="eager"
+          loading="lazy"
           h={"60px"}
           w={"370px"}
           src={CampaginBanner2}
@@ -73,7 +73,7 @@ function CampaignsView({ ttclid, gclid, kwaiid }: Props) {
         />
         <PhoneOtpScreen handleSuccess={handleSuccess} />
       </Flex>
-      {/* <Box
+      <Box
         as={Image}
         position={"sticky"}
         top={120}
@@ -82,7 +82,7 @@ function CampaignsView({ ttclid, gclid, kwaiid }: Props) {
         width={"50%"}
         loading={"lazy"}
         alt="Side Banner"
-      /> */}
+      />
     </HStack>
     //   )}
     // </>

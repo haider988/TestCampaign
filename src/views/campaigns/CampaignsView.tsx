@@ -60,7 +60,7 @@ function CampaignsView({ ttclid, gclid, kwaiid }: Props) {
         align={"center"}
         gap={{ base: 5, lg: 10 }}
       >
-        <Box
+        {/* <Box
           as={Image}
           loading="eager"
           h={"60px"}
@@ -68,6 +68,14 @@ function CampaignsView({ ttclid, gclid, kwaiid }: Props) {
           src={CampaginBanner2}
           alt="Top Banner"
           borderRadius={10}
+        /> */}
+        <Image
+          src={CampaginBanner2}
+          loading="lazy"
+          height={60}
+          width={370}
+          alt="Top Banner"
+          style={{ borderRadius: 10 }}
         />
         <PhoneOtpScreen handleSuccess={handleSuccess} />
       </Flex>

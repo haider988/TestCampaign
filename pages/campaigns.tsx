@@ -26,6 +26,7 @@ export default function Campaigns({ headers }: any) {
   console.log("--------------------------------------");
 
   useEffect(() => {
+    getAnalytics(app);
 
     const xmsisdn = headers["x-msisdn"]; //jazz
     // const msisdn = headers["msisdn"]; //ufone

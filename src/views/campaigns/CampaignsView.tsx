@@ -7,8 +7,6 @@ import CampaginBanner2 from "../../assets/campaignBanner2.jpg";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
-const url = "https://weatherwalay.com";
-
 type Props = {
   ttclid: any;
   gclid: any;
@@ -37,7 +35,7 @@ function CampaignsView({ ttclid, gclid, kwaiid }: Props) {
       router.push(`/success?phone=${phone}`);
     } else {
       //redirecting to website with phone number as params
-      window.open(`${url}?phone=${phone}`, "_self");
+      window.open(`https://weatherwalay.com?phone=${phone}`, "_self");
     }
   }, []);
 

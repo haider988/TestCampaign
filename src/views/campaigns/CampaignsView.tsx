@@ -1,10 +1,10 @@
 import { memo, useCallback } from "react";
 // import SuccessScreen from "../SuccessScreen";
-// import WWBanner from "../../assets/wwBanner.jpg";
+import WWBanner from "../../assets/wwBanner.jpg";
 import { Box, Flex, HStack } from "@chakra-ui/layout";
 import PhoneOtpScreen from "./PhoneOtpScreen";
-// import CampaginBanner2 from "../../assets/campaignBanner2.jpg";
-// import Image from "next/image";
+import CampaginBanner2 from "../../assets/campaignBanner2.jpg";
+import Image from "next/image";
 import { useRouter } from "next/router";
 
 type Props = {
@@ -60,7 +60,7 @@ function CampaignsView({ ttclid, gclid, kwaiid }: Props) {
         align={"center"}
         gap={{ base: 5, lg: 10 }}
       >
-        {/* <Box
+        <Box
           as={Image}
           loading="eager"
           h={"60px"}
@@ -68,10 +68,10 @@ function CampaignsView({ ttclid, gclid, kwaiid }: Props) {
           src={CampaginBanner2}
           alt="Top Banner"
           borderRadius={10}
-        /> */}
+        />
         <PhoneOtpScreen handleSuccess={handleSuccess} />
       </Flex>
-      {/* <Box
+      <Box
         as={Image}
         position={"sticky"}
         top={120}
@@ -80,7 +80,7 @@ function CampaignsView({ ttclid, gclid, kwaiid }: Props) {
         width={"50%"}
         loading={"lazy"}
         alt="Side Banner"
-      /> */}
+      />
     </HStack>
     //   )}
     // </>

@@ -37,6 +37,7 @@ export default function Home() {
               <Button
                 // onClick={() => router.push("/campaigns")}
                 size={"lg"}
+                style={{width:'100%'}}
                 colorScheme="messenger"
               >
                 Campaign
@@ -46,6 +47,7 @@ export default function Home() {
               <Button
                 // onClick={() => router.push("/register")}
                 size={"lg"}
+                style={{width:'100%'}}
                 colorScheme="messenger"
               >
                 Register
@@ -55,6 +57,7 @@ export default function Home() {
               <Button
                 // onClick={() => router.push("/subscribe")}
                 size={"lg"}
+                style={{width:'100%'}}
                 colorScheme="messenger"
               >
                 Subscribe

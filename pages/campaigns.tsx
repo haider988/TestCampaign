@@ -73,7 +73,7 @@ export default function Campaigns({ headers }: any) {
       technologies and local weather experts"
         />
 
-        {kwaiid && <SnackvideoPageViewScript pixel="571438131124645948" />}
+        {/* {kwaiid && <SnackvideoPageViewScript pixel="571438131124645948" />} */}
         {ttclid && <TiktokScript pixel="CM6IRKJC77U3QO247M80" />}
       </Head>
       <main>

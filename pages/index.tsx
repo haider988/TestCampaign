@@ -33,22 +33,21 @@ export default function Home() {
         <Box height={"100vh"} display={"grid"} placeItems={"center"}>
           <Stack spacing={6}>
             <Heading>Marketing</Heading>
-            <Link href={'/campaigns'} rel="preload">
+            <Link href={'/campaigns'}>
               <Button
-
                 // onClick={() => router.push("/campaigns")}
                 size={"lg"}
-                style={{ width: '100%' }}
+                style={{width:'100%'}}
                 colorScheme="messenger"
               >
                 Campaign
               </Button>
             </Link>
-            <Link href={'/register'} rel="preload">
+            <Link href={'/register'}>
               <Button
                 // onClick={() => router.push("/register")}
                 size={"lg"}
-                style={{ width: '100%' }}
+                style={{width:'100%'}}
                 colorScheme="messenger"
               >
                 Register
@@ -56,10 +55,9 @@ export default function Home() {
             </Link>
             <Link href={'/subscribe'}>
               <Button
-                rel="preload"
                 // onClick={() => router.push("/subscribe")}
                 size={"lg"}
-                style={{ width: '100%' }}
+                style={{width:'100%'}}
                 colorScheme="messenger"
               >
                 Subscribe

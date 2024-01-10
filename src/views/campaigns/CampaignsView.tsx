@@ -1,5 +1,5 @@
 import { memo, useCallback } from "react";
-// import SuccessScreen from "../SuccessScreen";
+import SuccessScreen from "../SuccessScreen";
 import WWBanner from "../../assets/wwBanner.jpg";
 import { Box, Flex, HStack } from "@chakra-ui/layout";
 import PhoneOtpScreen from "./PhoneOtpScreen";
@@ -64,7 +64,7 @@ function CampaignsView({ ttclid, gclid, kwaiid }: Props) {
       >
         <Box
           as={Image}
-          loading="lazy"
+          loading="eager"
           h={"60px"}
           w={"370px"}
           src={CampaginBanner2}
